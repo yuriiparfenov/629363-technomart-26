@@ -7,7 +7,7 @@
   <body>
     <header>
       <section class="logo">
-        <a href="index.html">Техномарт</a>
+        <a href="index.html" title="Ссылка на главную страницу">Техномарт</a>
         <form>
             <?xml version="1.0" encoding="UTF-8"?>
             <svg id="SVGDoc" width="17" height="17" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 17 17"><defs></defs>
@@ -220,7 +220,8 @@
               <h3>контакты</h3>
               <p>Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис:</p>
               <!--Здесь прикрепляем карту(через сервис яндекс карт-->
-              <a href="https://yandex.ru/maps/?um=constructor%3Af880454d777cb4fc7d0eb10da42c55824278b3cb621a7c3f093da2db0017dead&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Af880454d777cb4fc7d0eb10da42c55824278b3cb621a7c3f093da2db0017dead&amp;width=300&amp;height=158&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
+              <a href="https://yandex.ru/maps/?um=constructor%3Af880454d777cb4fc7d0eb10da42c55824278b3cb621a7c3f093da2db0017dead&amp;source=constructorStatic" target="_blank">
+                <img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Af880454d777cb4fc7d0eb10da42c55824278b3cb621a7c3f093da2db0017dead&amp;width=300&amp;height=158&amp;lang=ru_RU" alt="Офис компании по адресу: г. Санкт-Петербург, ул. Большая Конюшенная 19" style="border: 0;" /></a>
               <a href="#">заблудились?Напишите нам!</a>
           </section>
         </section>
@@ -248,6 +249,17 @@
               <li><a href="#">спецпредложения</a></li>
           </ul>
       </section>
+
+      <form class="visually-hidden">
+        <input type="button" value="x" aria-label="Закрыть форму">
+        <p>Ваше имя:</p>
+        <input type="text" name="name" id="form_name" placeholder="Имя Фамилия">
+        <p>Ваш e-mail:</p>
+        <input type="email" name="email" id="form_email" placeholder="email@example.com">
+        <p>Текст письма:</p>
+        <input type="text" name="letter" id="form_letter" placeholder="В свободной форме">
+        <button type="submit">отправить</button>
+      </form>
     
     <section class="footer">
       <section class="footer_paragraph">
@@ -255,19 +267,19 @@
           <p>Все права защищены</p>
       </section>
       <section class="social_icon">
-          <a href="#">
+          <a href="https://vk.com" aria-label="Ссылка на Вконтакте">
               <?xml version="1.0" encoding="UTF-8"?>
               <svg id="SVGDoc" width="26" height="15" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 26 15"><defs></defs>
                 <g><g><title>vk-icon</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAPCAYAAAD6Ud/mAAAB3UlEQVQ4T62UTYiIURSGn1dZ+IksRJpYUZOFTEhkmLBAaWZNyULyU8qKpY1YzMrUzIJYyFImGzt/abKYmpXSWMjCTymlkN9X5+t+47ruNzXl7O5333ue85577ifbe4Ae/sRXYFzS5/hkex1wHdgMzE+yH8BTYL+kj+1R2wJ2A4uzfAuBt7L9CYhFHmOSTiTQUuAMcKHQxHKnpEcZaAi4XdF9D9AIcKrYDDdrJL1PsKj0HbC80A1IepCBHgL9FdCtAK0GXmRtaXWXJZ3LkkwBG7pAtncB9yuQL8D6qDTuYQw4XnHVK+lV0tRAmyRN2p4HPAG2VkAnJY22oC5XMRSDCfQM6C0SbZQ0Zfs0cKUCGQeGJDVT0oTtYeBsrSLgKvABWFTsHwReA4+BBcXeS6BPUpwjBy0Dnlcu/BcQbeurFPEGiKksp9bAdkkT7ZkZUHJ1BLhRSTjXT9OS4v3NRAmK9V3gwFwzV/THJEXLm/gLlFytSK1a+R9gzcRVQQm2BYiHWF5wyY6Ljg4cBmLEa9E4+8dRq7Q9ANwBlszi7LykS7YPATc7dD/j/9cJSs7WAteAHR1J9km6l7TxNOKJ1GJ6VlDmbi8QVUdLV6Xv0bZtkmLEm7B9FLgI5Pf7DZj4DXDIp9a5ZvB2AAAAAElFTkSuQmCC" width="26" height="15" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
               </svg>
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com" aria-label="Ссылка на Фэйсбук">
               <?xml version="1.0" encoding="UTF-8"?>
               <svg id="SVGDoc" width="12" height="22" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 12 22"><defs></defs>
                 <g><g><title>fb-icon</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAYAAAD0OH0aAAAAdklEQVQ4T9WSuw2AQAxDXwoKOtiAEViBht0YiQVYB2gpMDoEEopCyyel5edYdzGCkVQDHdAA2dVi3n+YByCPwiKgB9rInLQIWHyN20qSUsDq0itgPrVogxxQmtn0ICDJV7h7oF23bwKFKz3+7R+C8377NL5XaQOTZmYRxd1X6AAAAABJRU5ErkJggg==" width="12" height="22" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
               </svg>
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com" aria-label="Ссылка на Инстаграмм">
               <?xml version="1.0" encoding="UTF-8"?>
               <svg id="SVGDoc" width="21" height="21" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 21 21"><defs></defs>
                 <g><g><title>insta-icon</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABK0lEQVQ4T92VTS5EQRSFv0MiYtTNBgzEEuiBBegIC8DIUGIP9iDpmR6ItgERFmBCYgMGdiDNSEfClZvUk1K8V89rPVGjm/r5cm6dW7dkZnPAEbANzNJ8jIAz4EBmdgzsNWd9O9l36MuYClPqyKHWUOUi8BydHRbxONC2pKcCFIv7X9BL4BC4B5ZD3K3yIZe+AzckfZppZgIugFJwCnVH74CFoGRV0m2qysxWgJsw/wgsAaXut+NF4IvDkdOtZN808FZWUg59cNgvlA4lzVeVlMNOgM0ArXOn55K2ctAO4LBi5NzvSrqqhPorMbNTYKfG8x1I2vV9daAzQD8DHnh3k/RaCxq5vA7sA2vBPC+ba6DnKceZZJX+lLaZTUl6L7uSFDqRfjqRzv/nf9QH1trOBEUK+HQAAAAASUVORK5CYII=" width="21" height="21" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
@@ -277,7 +289,7 @@
       <section class="footer_links">
           <a href="#">mail@htmlacademy.ru</a>
           <p>Разработано &mdash;</p>
-          <a href="https://htmlacademy.ru" target="_blank">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru" target="_blank" aria-label="Ссылка на сайт htmlАкадемии">htmlacademy.ru</a>
       </section>
 
     </footer>
