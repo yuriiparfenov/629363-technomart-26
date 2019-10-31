@@ -1,281 +1,330 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Техномарт:Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
-        <section class="logo">
-          <a href="index.html">Техномарт</a>
-          <form>
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg id="SVGDoc" width="17" height="17" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 17 17"><defs></defs>
-                <g><g opacity="0.3"><title>icon-search</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAABrUlEQVQ4T6WTv2tTURTHPyd5idRCsQpSSJv3SgJWySBu0iW0nboUXJwd6uDY0r+i1D9ABcFBcBG6dFLMIi7SqaQtvEfujQa6+LNb+ppT7ktSXkNrNd7p3F+fe+75fo+QGlWq3peifYTwEPQeMA78ANlGeTPV9F/WqMXpOy6W/kK5WLyjknkL3Bo8lJrvi3YehM1mPX0mgfQAn4Ax4EDQ9Vhky8XAhKe6qMiai4Hfop37aZAkX/DNTjcD+ZiL20t7rda3wWxmCoUbR15+E3QW2J+yQaX/NSkVp5cRfeZezcVHlfMAfWAXlHMPTqDyOGo2nic1KfnT70DnBV0NrX36h3okW2XfX1FkA+R9ZBsLPUjw3alwLNw2xuxdBgmCYCar7DrVImuu9yHqgmNh3Bjz8y8g17LqZIfImizQkZI/dCaHkTVOzf+pCR8ia+a6kCHVEWQ5tI0XCWRIn+xeGb16t16vt09t/4+OTWoqsVcNW+HXYXrHSZsHSmnQaQM64gVdfAh8FuR1fnTkVftX+6Z6cS0NOgM5xyMZ54PB9XKhPJkCbV8GudB7PdBmRnhyAsmh2lza6hKcAAAAAElFTkSuQmCC" width="17" height="17" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
-              </svg>
-            <input type="text" value="Поиск">
-          </form>
-              <ul>
-                <li>
-                    <?xml version="1.0" encoding="UTF-8"?>
-                    <svg id="SVGDoc" width="14" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 14 16"><defs></defs>
-                      <g><g opacity="0.3"><title>icon-bookmark</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAAqklEQVQ4T+2TMQ4BURCG/3+3VJN1AA37ns4t3EBHolI5glqlktC5wd5CZ4TGAd4LtXJ3ZCObLJKNrZly8n3Nlxm62AgAg3pzpIuN1nOe9F+sqPbLcVICm7yNAhMA4XunjzgKvTALR+3zYZ/DrtsfaJDuCHbK8otIYI2A80jkXoa8tQ1kulRgWuwL8UblODpJUnXwvmeHSt0CaNIbswC5ikSu33yJt7YF1dkDfb1LWiKYoC4AAAAASUVORK5CYII=" width="14" height="16" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
-                    </svg>
-                  <a href="#">Закладки</a>
-                </li>
-                <li>
-                    <?xml version="1.0" encoding="UTF-8"?>
-                    <svg id="SVGDoc" width="15" height="15" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 15 15"><defs></defs>
-                      <g><g opacity="0.3"><title>cart-icon</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAArUlEQVQ4T6XSPQ5BQRAA4E+CRCHRat1B5xY6F1CI1h3UNFqJTqHW6kSt06tVfiJkhWDzIptnqt3MfDO72S3g5h0bND/2P5eFCF9QxSmlQcC1Z+EW9RT0qgn4FXO08+IBhnlxC6u8uIIDiqkNPu8czDrhqfaYYRrjMXoZk49YBIAlrqEmxp1n16STx7iBXZLMmJzqHnXx5BG6mKCf0ekrH+MzSgh/vJyBv/J/Tb4DTKwgNwNWWf8AAAAASUVORK5CYII=" width="15" height="15" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
-                    </svg>
-                  <a href="#">Корзина:10</a>
-                </li>
-                <li><input type="button" value="Оформить заказ"></li>
-              </ul>
+        <section class="header_logo">
+            <div class="logo">
+                <a href="index.html" title="Ссылка на главную страницу" class="logo_index">
+                    <img src="img/ТЕХНОМАРТ.png" alt="Логотип Техномарт">
+                </a>
+                <form class="search">
+                    <input type="text" class="search_text _hover" placeholder="Поиск:">
+                </form>
+                <!--<div class="header_links">-->
+                <a href="#" class="bookmarks">Закладки: 0</a>
+                <a href="#" class="shop_basket catalog">Корзина: 10</a>
+                <a href="#" class="order">Оформить заказ</a>
+            </div>
+            <!--<input type="button" value="Оформить заказ" name="order" class="order">-->
         </section>
-       <section class="head_inform">
+        <section class="head_inform">
             <section class="paragraph">
-              <p>Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
-            </section>          
+                <p>Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
+            </section>
             <section class="number">
                 <div class="phone">
-                    <?xml version="1.0" encoding="UTF-8"?>
-                    <svg id="SVGDoc" width="19" height="19" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 19 19"><defs></defs>
-                      <g><g><title>icon-phone</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAB8UlEQVQ4T53TMWgTURzH8e//IrbFVkQsgoOgg0hxEUp7BodeqZqLhjpl0MXFoZugSwdXKTgKdXHSQegQt7tGrRcRkouLRYQqIl0UlYKCqbaWeH+5M5e2abQ5b7jjuPf7vP97/3dC43JKlZyo3ELoA5myR4Zvxt86fUo4cPaJP64GBRQjDgYYx89aQ/OdQuE4UVVxS9WPAvtbgpO2ZU4lwh54L/Z08/Nra0jhUdYyTyfCHMfpkp69q21CNdsydyfCwsFuyf+AcqAluGhb5uHkmFd1QTMbgosGQfaMlX6dHCv5kyg3mkE1xuzRobkkUNTN8Fb0ykcDjIV1jPv2qHnhv7Bo3zz/GXCyCYik7ZHhShIwqiw6uF45oxhu/K7wlhUGs1nzW6dgEwsDjuc/FDi1HpbZ2tKu8Xz+2Fon4Cas+LR6KFCdR2meLwG3i5W8ZVnLMeg89geMevApk0l/2TjJJuxPddXzghbi5jS6tBAYwcXlz+9f9vUfvANcQghEKSrcrS31FsLqt2ARWKpMiMp0y9J+IbxBGdi6ZHlXJ2W2xRrgZVG5DaQ62y+Z+CsWnb+5cjpIGfdQtv2tBK79EwtBz/O6V+m5AlwF9rWtUni+tqM+ti0Wh2dmXu3s7f+eFYJziJxAOQLUEZmu11LXc7nBH78B20GiBsGWEeoAAAAASUVORK5CYII=" width="19" height="19" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
-                    </svg>
                     <p>+7(812)555-05-55</p>
-                </div> 
-                <p>г.Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8</p>
-               </section>
-           <section class="name">
-                  <?xml version="1.0" encoding="UTF-8"?>
-                  <svg id="SVGDoc" width="20" height="18" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 20 18"><defs></defs>
-                    <desc>Generated with Avocode.</desc><g><g><title>icon-user</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAABo0lEQVQ4T62TTygEYRjGn3d2kHWgyIkDLiT/Zh2U1JqVm4PDHmSmlBJHJBdOXCQclRzUjBz24OCmtTZRDmb9S1xw4CSKgxV259Unh7XNbLvyHed7fr/m/XpeQobT2K2XexJYInCviDFoMylj9GzbeHDDyO3C1zPk5df4IYCGtMw5FXnbrK2VuBPrKmxR9SkCzzhBDJo+jhizOQkVVb8EuNZ5ArqKRYy6rIXBYNBz/VSQyPS+NaXvcigUSqZnHEf2+YbyuDj+kUlIL958y1r5zEooQr5O7YYJVY5jMW6tXbM665F/hAtMGHMRLlq75nhuQn9fGUueCwDlaeAD2cl6K7rxmJNQhJWA1gHGXipIEnVYYWM/52ILoNHfXyFLdJcKJ2yuPIuu3/9FSEpAmwNj4hdMmI/tmJPfm+hwHGvT2qX5kzZmCWh33hQceCRMHYXNqGttmv0DJSR96gQaBNCUqYMpd6cAVm1bNk+ia8/iu/hDUlR9BmBRkcIsRemxN4AWYxFjmlpUfZjAy38U/cIYNEKKqh2JxfgPIQBLCMU+yv8kTHwBCGR/s2shMsMAAAAASUVORK5CYII=" width="20" height="18" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
-                  </svg>
-                  <a href="#">Равшан Джамшутович</a>
-                  <a href="#">
-                      <?xml version="1.0" encoding="UTF-8"?>
-                      <svg id="SVGDoc" width="20" height="17" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 20 17"><defs></defs>
-                        <desc>Generated with Avocode.</desc><g><g><title>icon-logout</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAABLUlEQVQ4T2PUCg1l43jH3s/wnyGBgYGBiwEN/Pv3z/DCgWUXQMLGTrGTvgv/KLm2evUvdHUwPqORY0wrAyNDFS4FyAYaOcU8YGD8f4ORizvo7OZZ37DpYTRyirnNwMCgwsjAkHrWTmUeQ0PDP1yGgw1kYJBnYGDcz/mT1f/o0Xmf0dWCDPzAwMDA/+8fi+KFAwtAGnAChIEMDP8ZGE8xMf1wO7tn9UdkDWQbCDKEkZHhwr9frG7nD89/jQhDMl2I5KorfxmYPC7uW/QUbAk2LyN7DV8QIMnd/fPvv8OlA0ufUMtABkYGhif//zE4Us1AqGtPUs1AarsQfxiae0bz/fzOyoQeIUyMfy8xMP6XRRMnHMuEcwpEBVXTIb6cQu28HNvCwPC/mmqlDbXLQwCWhviObtO3gQAAAABJRU5ErkJggg==" width="20" height="17" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
-                      </svg>
-                  </a>
-                  <ul>
-                    <li><a href="#">Мои заказы</a></li>
-                    <li><a href="#">Личный кабинет</a></li>
-                  </ul>
-           </section>
-       </section>
-       <nav>
-         <ul class="nav">
-           <li><a href="index.html">главная</a></li>
-           <li><a href="#">компания</a></li>
-           <li><a href="catalog.html">каталог</a></li>
-           <li><a href="#">новости</a></li>
-           <li><a href="#">спецпредложения</a></li>
-           <li><a href="#">доставка</a></li>
-           <li><a href="#">контакты</a></li>
-         </ul>
-       </nav>
-      </header>
+                </div>
+                <p class="adress">г.Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8</p>
+            </section>
+            <section class="name">
+                <div class="name_all">
+                    <a href="#" class="name_user">Равшан Джамшутович</a>
+                    <a href="#" class="name_exit"></a>
+                </div>
 
-      <main>
-        <section class="main_links">
-          <a href="index.html">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg id="SVGDoc" width="14" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 14 12"><defs></defs>
-                <g><g><title>icon-home</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAABUUlEQVQoU8WRO0sDURCFz9wNG0QJWClKUDBgJ2QtlCREg4VEiL3YKghiYy2K+QOCIIipxcbKgI/CIktYt3EDso0QBBEljfhAkSzZO3KDEYmJrdMMzJlvhplDaBOm5UwpKRkzzlUuWA6rLKvUnUpFn6kVZ16UFph5S2nMtDoZj+b+BJmZTLuUhcSSZM4oUBDlIbALxlrLja7r6o+v3h6AuASnNUG6avQlewJ0AiDyC7RtO1T19UMQhajGGV+Xw0KKo3qjkLOaJ645QHmAxzSJ/kTCeKBi0emraTgmidvOoJx782iaQPsAOr7u/2DwfJfOZ+9VccACAwEfM1SwnBtinFbuyyu94cgiM3bUaU1Pk0RYrtyVcz3hoW0wpcm0L0eS46NXpuVsMrDezh5VJyCbjBkbivm2o/HuBlhjDAqPXkSQn34Om4gZdaYt2DC6eeD/gZ9dCbE155TFsgAAAABJRU5ErkJggg==" width="14" height="12" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
-              </svg>
-          </a>
-          <?xml version="1.0" encoding="UTF-8"?>
-          <svg id="SVGDoc" width="8" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 8 12"><defs></defs>
-            <g><g><title>icon-right-small</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAAAUklEQVQoU2Pcf+aMCNMvphtMjP+8bS1NTjKgAUYQ/8Dxc5mM/xnamRj/uaMrAivApwiuAJciFAXYFGEoQFb07z+zDekK0H1EvCNxhQXhgCIU1AAJV1MPCoDyfwAAAABJRU5ErkJggg==" width="8" height="12" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
-          </svg>
-          <a href="catalog.html">каталог</a>
-          <?xml version="1.0" encoding="UTF-8"?>
-          <svg id="SVGDoc" width="8" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 8 12"><defs></defs>
-            <g><g><title>icon-right-small</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAAAUklEQVQoU2Pcf+aMCNMvphtMjP+8bS1NTjKgAUYQ/8Dxc5mM/xnamRj/uaMrAivApwiuAJciFAXYFGEoQFb07z+zDekK0H1EvCNxhQXhgCIU1AAJV1MPCoDyfwAAAABJRU5ErkJggg==" width="8" height="12" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
-          </svg>
-          <a href="#">инструмент</a>
-          <?xml version="1.0" encoding="UTF-8"?>
-          <svg id="SVGDoc" width="8" height="12" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 8 12"><defs></defs>
-            <g><g><title>icon-right-small</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAAAUklEQVQoU2Pcf+aMCNMvphtMjP+8bS1NTjKgAUYQ/8Dxc5mM/xnamRj/uaMrAivApwiuAJciFAXYFGEoQFb07z+zDekK0H1EvCNxhQXhgCIU1AAJV1MPCoDyfwAAAABJRU5ErkJggg==" width="8" height="12" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
-          </svg>
-          <a href="#">перфораторы</a>
+                <div class="name_links">
+                    <a href="#" class="my_order">Мои заказы</a>
+                    <div class="circle"></div>
+                    <a href="#" class="private_off">Личный кабинет</a>
+                </div>
+            </section>
+        </section>
+        <section class="navigation">
+            <nav class="nav">
+                <a href="index.html">главная</a>
+                <a href="#">компания</a>
+                <a href="catalog.html">каталог</a>
+                <a href="#">новости</a>
+                <a href="#">спецпредложения</a>
+                <a href="#">доставка</a>
+                <a href="#">контакты</a>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="mmain_links">
+            <div class="main_links">
+                <a href="index.html" class="main_l_main">Главная</a>
+                <div class="pic"></div>
+                <a href="catalog.html">каталог</a>
+                <div class="pic"></div>
+                <a href="#">инструмент</a>
+                <div class="pic"></div>
+                <a href="#">перфораторы</a>
+            </div>
+
         </section>
         <h1>перфораторы</h1>
-        <section class="options">
-          <section class="catalog_manufact">
-              <form>
-                  <p><h3>производители</h3></p>
-                  <p><input type="checkbox" name="bosh" value="bosh" checked>bosh</p>
-                  <p><input type="checkbox" name="interskol" value="interskol">интерскол</p>
-                  <p><input type="checkbox" name="makita" value="makita" checked>makita</p>
-                  <p><input type="checkbox" name="dewalt" value="dewalt">dewalt</p>
-                  <p><input type="checkbox" name="hitachi" value="hitachi0">hitachi</p>
-              </form>
-          </section>
-          <section class="electricity">
-              <form>
-                  <p><h3>питание</h3></p>
-                  <p><input type="checkbox" name="acc" value="acc" checked>аккумуляторные</p>
-                  <p><input type="checkbox" name="net" value="net">сетевые</p>
-              </form>
-          </section>
-          <a href="#">показать</a>
+
+        <section class="chek_opt">
+            <section class="options">
+                <section class="catalog_manufact">
+                    <h4>фильтр:</h4>
+                    <section class="option_price">
+                        <h3>цена:</h3>
+                        <div class="price_square">
+                            <div class="line"></div>
+                            <div class="circle_lf"></div>
+                            <div class="circle_rt"></div>
+                            <div class="line_2"></div>
+                        </div>
+                        <div class="opt_input">
+                            <input type="text" placeholder="0">
+                            <span> &minus;</span>
+                            <input type="text" placeholder="100">
+                        </div>
+                    </section>
+                    <section class="filter_1">
+                        <h3>производители:</h3>
+                        <div class="filter_1_list">
+                            <input type="checkbox" name="bosh" value="bosh" id="ch_bosh" checked>
+                            <input type="checkbox" name="interskol" id="ch_interskol" value="interskol">
+                            <input type="checkbox" name="makita" id="ch_makita" value="makita" checked>
+                            <input type="checkbox" name="dewalt" id="ch_dewalt" value="dewalt">
+                            <input type="checkbox" name="hitachi" id="ch_hitachi" value="hitachi0">
+                            <label for="ch_bosh">bosh</label>
+                            <label for="ch_interskol">интерскол</label>
+                            <label for="ch_makita">makita</label>
+                            <label for="ch_dewalt">dewalt</label>
+                            <label for="ch_hitachi">hitachi</label>
+                        </div>
+
+                    </section>
+                    <section class="filter_2">
+                        <h3>питание:</h3>
+                        <div class="filter_2_list">
+                            <input type="radio" id="acc" name="fil_r" value="accum">
+                            <label for="acc">аккумуляторные</label>
+                            <input type="radio" id="net" name="fil_r" value="netw">
+                            <label for="net">сетевые</label>
+                        </div>
+                    </section>
+
+                </section>
+                <a href="#">показать</a>
+            </section>
+
+            <section class="popular_goods_catalog">
+                <div class="pop_goods_text">
+                    <h4>сортировка:</h4>
+                    <div class="pop_goods_t_links">
+                        <a href="#" class="pop_goods_t_links_active">по цене</a>
+                        <a href="#">по типу</a>
+                        <a href="#">по функционалу</a>
+                    </div>
+                    <div class="arrow">
+                        <a href="#" class="arr_up"></a>
+                        <a href="#" class="arr_dn"></a>
+                    </div>
+
+                </div>
+                <ul class="items catalog_items">
+                    <li>
+                        <div class="pop_up">
+                            <a href="#" class="pop_btn_buy">купить</a>
+                            <a href="#" class="pop_btn_b">в закладки</a>
+                        </div>
+                        <img src="img/bfg_3000.png" alt="Перфоратор BOSCH BFG 3000">
+                        <p>Перфоратор BOSCH BFG 3000</p>
+                        <span class="old_price">22500&nbsp;р</span>
+                        <span class="price">15500&nbsp;р</span>
+
+                    </li>
+                    <li>
+                        <div class="pop_up">
+                            <a href="#" class="pop_btn_buy">купить</a>
+                            <a href="#" class="pop_btn_b">в закладки</a>
+                        </div>
+                        <img src="img/bfg_6000.png" alt="Перфоратор BOSCH BFG 6000">
+                        <p>Перфоратор BOSCH BFG 6000</p>
+                        <span class="old_price">30500&nbsp;р</span>
+                        <span class="price">25500&nbsp;р</span>
+
+                    </li>
+                    <li>
+                        <div class="pop_up">
+                            <a href="#" class="pop_btn_buy">купить</a>
+                            <a href="#" class="pop_btn_b">в закладки</a>
+                        </div>
+                        <img src="img/new_flag.png" class="new_product" alt="new">
+                        <img src="img/bfg_2000.png" alt="Перфоратор BOSCH BFG 2000">
+                        <p>Перфоратор BOSCH BFG 2000</p>
+                        <span class="price new_pr">12500&nbsp;р</span>
+
+                    </li>
+                    <li>
+                        <div class="pop_up">
+                            <a href="#" class="pop_btn_buy">купить</a>
+                            <a href="#" class="pop_btn_b">в закладки</a>
+                        </div>
+                        <img src="img/bfg_3000.png" alt="Перфоратор BOSCH BFG 3000">
+                        <p>Перфоратор BOSCH BFG 3000</p>
+                        <span class="old_price">22500&nbsp;р</span>
+                        <span class="price">15500&nbsp;р</span>
+
+                    </li>
+                    <li>
+                        <div class="pop_up">
+                            <a href="#" class="pop_btn_buy">купить</a>
+                            <a href="#" class="pop_btn_b">в закладки</a>
+                        </div>
+                        <img src="img/new_flag.png" class="new_product" alt="new">
+                        <img src="img/bfg_6000.png" alt="Перфоратор BOSCH BFG 6000">
+                        <p>Перфоратор BOSCH BFG 6000</p>
+                        <span class="old_price">30500&nbsp;р</span>
+                        <span class="price">25500&nbsp;р</span>
+
+                    </li>
+                    <li>
+                        <div class="pop_up">
+                            <a href="#" class="pop_btn_buy">купить</a>
+                            <a href="#" class="pop_btn_b">в закладки</a>
+                        </div>
+
+                        <img src="img/bfg_2000.png" alt="Перфоратор BOSCH BFG 2000">
+                        <p>Перфоратор BOSCH BFG 2000</p>
+                        <span class="price new_pr">12500&nbsp;р</span>
+
+                    </li>
+                    <li>
+                        <div class="pop_up">
+                            <a href="#" class="pop_btn_buy">купить</a>
+                            <a href="#" class="pop_btn_b">в закладки</a>
+                        </div>
+                        <img src="img/new_flag.png" class="new_product" alt="new">
+                        <img src="img/bfg_3000.png" alt="Перфоратор BOSCH BFG 3000">
+                        <p>Перфоратор BOSCH BFG 3000</p>
+                        <span class="old_price">22500&nbsp;р</span>
+                        <span class="price">15500&nbsp;р</span>
+
+                    </li>
+                    <li>
+                        <div class="pop_up">
+                            <a href="#" class="pop_btn_buy">купить</a>
+                            <a href="#" class="pop_btn_b">в закладки</a>
+                        </div>
+                        <img src="img/bfg_6000.png" alt="Перфоратор BOSCH BFG 6000">
+                        <p>Перфоратор BOSCH BFG 6000</p>
+                        <span class="old_price">30500&nbsp;р</span>
+                        <span class="price">25500&nbsp;р</span>
+
+                    </li>
+                    <li>
+                        <div class="pop_up">
+                            <a href="#" class="pop_btn_buy">купить</a>
+                            <a href="#" class="pop_btn_b">в закладки</a>
+                        </div>
+
+                        <img src="img/bfg_2000.png" alt="Перфоратор BOSCH BFG 2000">
+                        <p>Перфоратор BOSCH BFG 2000</p>
+                        <span class="price new_pr">12500&nbsp;р</span>
+
+                    </li>
+                </ul>
+                <section class="pages">
+                    <a href="#" class="p_active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">следующая</a>
+                </section>
+            </section>
         </section>
-        
-        <section class="popular_goods">
-            <ul class="items">
-                <li>
-                    <a href="#">
-                       <img src="img/bfg_3000.png" alt="Перфоратор BOSCH BFG 3000">
-                       <p>перфоратор bosch bfg 3000</p>
-                       <span class="old_price">22500&nbsp;р</span>
-                       <span>15500&nbsp;р</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                       <img src="img/bfg_6000.png" alt="Перфоратор BOSCH BFG 6000">
-                       <p>перфоратор bosch bfg 6000</p>
-                       <span class="old_price">30500&nbsp;р</span>
-                       <span>25500&nbsp;р</span>
-                    </a>
-                </li>
-                <li class="new_product">
-                    <a href="#">
-                       <img src="img/new_flag.png" alt="новый товар">
-                       <img src="img/bfg_2000.png" alt="Перфоратор BOSCH BFG 2000">
-                       <p>перфоратор bosch bfg 2000</p>
-                       <span>25500&nbsp;р</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                       <img src="img/bfg_3000.png" alt="Перфоратор BOSCH BFG 3000">
-                       <p>перфоратор bosch bfg 3000</p>
-                       <span class="old_price">22500&nbsp;р</span>
-                       <span>15500&nbsp;р</span>
-                    </a>
-                </li>
-                <li class="new_product">
-                    <a href="#">
-                       <img src="img/new_flag.png" alt="новый товар">
-                       <img src="img/bfg_6000.png" alt="Перфоратор BOSCH BFG 6000">
-                       <p>перфоратор bosch bfg 6000</p>
-                       <span class="old_price">30500&nbsp;р</span>
-                       <span>25500&nbsp;р</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                       <img src="img/bfg_2000.png" alt="Перфоратор BOSCH BFG 2000">
-                       <p>перфоратор bosch bfg 2000</p>
-                       <span>25500&nbsp;р</span>
-                    </a>
-                </li>
-                <li class="new_product">
-                    <a href="#">
-                       <img src="img/new_flag.png" alt="новый товар">
-                       <img src="img/bfg_3000.png" alt="Перфоратор BOSCH BFG 3000">
-                       <p>перфоратор bosch bfg 3000</p>
-                       <span class="old_price">22500&nbsp;р</span>
-                       <span>15500&nbsp;р</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                       <img src="img/bfg_6000.png" alt="Перфоратор BOSCH BFG 6000">
-                       <p>перфоратор bosch bfg 6000</p>
-                       <span class="old_price">30500&nbsp;р</span>
-                       <span>25500&nbsp;р</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                       <img src="img/bfg_2000.png" alt="Перфоратор BOSCH BFG 2000">
-                       <p>перфоратор bosch bfg 2000</p>
-                       <span>25500&nbsp;р</span>
-                    </a>
-                </li>
-            </ul>
-          </section>
-          <section class="pages">
-            <ul>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">следующая</a></li>
-            </ul>
-          </section>
-      <section class="drill">
-        <h3>пара слов о перфораторах</h3>
-        <p>Перфоратор&nbsp;&mdash; универсальный строительный инструмент. Предназначен для сверления и&nbsp;долбления отверстий в&nbsp;кирпиче, бетоне и&nbsp;камне.</p>
-        <p>Существуют электромеханические и&nbsp;пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и&nbsp;отбойного молотка. В&nbsp;ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в&nbsp;одном устройстве будут совмещены отбойный молоток и&nbsp;ударная дрель.</p> 
-      </section>
-      </main>
-      <footer>
-          <section class="footer_nav">
-            <a href="index.html">техномарт</a>
-            <ul>
-              <li><a href="#">компания</a></li>
-              <li><a href="#">новости</a></li>
-              <li><a href="catalog.html">каталог</a></li>
-              <li><a href="#">доставка</a></li>
-              <li><a href="#">контакты</a></li>
-            </ul>
-          </section>
-          <section class="other">
-            <a href="#">
+        <section class="drill">
+            <div class="drill_p">
+                <h3>пара слов о перфораторах</h3>
+                <p>Перфоратор&nbsp;&mdash; универсальный строительный инструмент. Предназначен для сверления и&nbsp;долбления отверстий в&nbsp;кирпиче, бетоне и&nbsp;камне.</p>
+                <p>Существуют электромеханические и&nbsp;пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и&nbsp;отбойного молотка. В&nbsp;<br>ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в&nbsp;одном
+                    устройстве будут совмещены отбойный молоток и&nbsp;ударная дрель.
+                </p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <section class="footer_nav">
+            <div>
+                <a href="index.html" title="Ссылка на главную страницу" class="logo_index footer_logo">
+                    <img src="img/ТЕХНОМАРТ_f_logo.png" alt="Логотип Техномарт">
+                </a>
+            </div>
+            <section class="footer_navigation">
+                <a href="#">компания</a>
+                <a href="#">новости</a>
+                <a href="catalog.html">каталог</a>
+                <a href="#">доставка</a>
+                <a href="#">контакты</a>
+            </section>
+
+        </section>
+        <section class="other">
+            <div class="other_text">
                 <p>г. Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8</p>
                 <p>+7 (812) 555-05-55</p>
-            </a>
-              <ul>
-                  <li><a href="#">материалы</a></li>
-                  <li><a href="#">техника</a></li>
-                  <li><a href="#">инструмент</a></li>
-                  <li><a href="#">спецпредложения</a></li>
-              </ul>
-          </section>
+            </div>
+            <section class="other_links">
+                <a href="#">материалы</a>
+                <a href="#">техника</a>
+                <a href="#">инструмент</a>
+                <a href="#">спецпредложения</a>
+            </section>
 
-          <form class="visually-hidden">
-              <input type="button" value="x" aria-label="Закрыть форму">
-              <h2>Товар добавлен в&nbsp;корзину!</h2>
-              <a href="#">Оформить заказ</a>
-              <input type="button" value="продолжить покупки" aria-label="продолжить покупки,закрыв форму">
-          </form> 
-        
+
+        </section>
+
+        <form class="visually-hidden">
+            <input type="button" value="x" aria-label="Закрыть форму">
+            <p>Ваше имя:</p>
+            <input type="text" name="name" id="form_name" placeholder="Имя Фамилия">
+            <p>Ваш e-mail:</p>
+            <input type="email" name="email" id="form_email" placeholder="email@example.com">
+            <p>Текст письма:</p>
+            <input type="text" name="letter" id="form_letter" placeholder="В свободной форме">
+            <button type="submit">отправить</button>
+        </form>
+
         <section class="footer">
-    
-          <section class="footer_paragraph">
-              <p>&copy;&nbsp;2010&ndash;2019 Компания &laquo;Техномарт&raquo;</p>
-              <p>Все права защищены</p>
-          </section>
-          <section class="social_icon">
-            <a href="https://vk.com" aria-label="Ссылка на Вконтакте">
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg id="SVGDoc" width="26" height="15" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 26 15"><defs></defs>
-                  <g><g><title>vk-icon</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAPCAYAAAD6Ud/mAAAB3UlEQVQ4T62UTYiIURSGn1dZ+IksRJpYUZOFTEhkmLBAaWZNyULyU8qKpY1YzMrUzIJYyFImGzt/abKYmpXSWMjCTymlkN9X5+t+47ruNzXl7O5333ue85577ifbe4Ae/sRXYFzS5/hkex1wHdgMzE+yH8BTYL+kj+1R2wJ2A4uzfAuBt7L9CYhFHmOSTiTQUuAMcKHQxHKnpEcZaAi4XdF9D9AIcKrYDDdrJL1PsKj0HbC80A1IepCBHgL9FdCtAK0GXmRtaXWXJZ3LkkwBG7pAtncB9yuQL8D6qDTuYQw4XnHVK+lV0tRAmyRN2p4HPAG2VkAnJY22oC5XMRSDCfQM6C0SbZQ0Zfs0cKUCGQeGJDVT0oTtYeBsrSLgKvABWFTsHwReA4+BBcXeS6BPUpwjBy0Dnlcu/BcQbeurFPEGiKksp9bAdkkT7ZkZUHJ1BLhRSTjXT9OS4v3NRAmK9V3gwFwzV/THJEXLm/gLlFytSK1a+R9gzcRVQQm2BYiHWF5wyY6Ljg4cBmLEa9E4+8dRq7Q9ANwBlszi7LykS7YPATc7dD/j/9cJSs7WAteAHR1J9km6l7TxNOKJ1GJ6VlDmbi8QVUdLV6Xv0bZtkmLEm7B9FLgI5Pf7DZj4DXDIp9a5ZvB2AAAAAElFTkSuQmCC" width="26" height="15" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
-                </svg>
-            </a>
-            <a href="https://www.facebook.com" aria-label="Ссылка на Фэйсбук">
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg id="SVGDoc" width="12" height="22" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 12 22"><defs></defs>
-                  <g><g><title>fb-icon</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAYAAAD0OH0aAAAAdklEQVQ4T9WSuw2AQAxDXwoKOtiAEViBht0YiQVYB2gpMDoEEopCyyel5edYdzGCkVQDHdAA2dVi3n+YByCPwiKgB9rInLQIWHyN20qSUsDq0itgPrVogxxQmtn0ICDJV7h7oF23bwKFKz3+7R+C8377NL5XaQOTZmYRxd1X6AAAAABJRU5ErkJggg==" width="12" height="22" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
-                </svg>
-            </a>
-            <a href="https://www.instagram.com" aria-label="Ссылка на Инстаграмм">
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg id="SVGDoc" width="21" height="21" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 21 21"><defs></defs>
-                  <g><g><title>insta-icon</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABK0lEQVQ4T92VTS5EQRSFv0MiYtTNBgzEEuiBBegIC8DIUGIP9iDpmR6ItgERFmBCYgMGdiDNSEfClZvUk1K8V89rPVGjm/r5cm6dW7dkZnPAEbANzNJ8jIAz4EBmdgzsNWd9O9l36MuYClPqyKHWUOUi8BydHRbxONC2pKcCFIv7X9BL4BC4B5ZD3K3yIZe+AzckfZppZgIugFJwCnVH74CFoGRV0m2qysxWgJsw/wgsAaXut+NF4IvDkdOtZN808FZWUg59cNgvlA4lzVeVlMNOgM0ArXOn55K2ctAO4LBi5NzvSrqqhPorMbNTYKfG8x1I2vV9daAzQD8DHnh3k/RaCxq5vA7sA2vBPC+ba6DnKceZZJX+lLaZTUl6L7uSFDqRfjqRzv/nf9QH1trOBEUK+HQAAAAASUVORK5CYII=" width="21" height="21" transform="matrix(1,0,0,1,0,0)" ></image></g></g>
-                </svg>
-            </a>
+            <section class="under_footer">
+                <section class="footer_paragraph">
+                    <p>&copy;&nbsp;2010&ndash;2019 Компания &laquo;Техномарт&raquo;</p>
+                    <p>Все права защищены</p>
+                </section>
+                <section class="social_icon">
+                    <a href="vk.com" class="vk-btn">вконтакте</a>
+                    <a href="facebook.com" class="fb-btn">фэйсбук</a>
+                    <a href="instagram.com" class="inst-btn">инстаграмм</a>
+                </section>
+                <section class="footer_links">
+                    <div class="connect">
+                        <p>Обратная связь:</p>
+                        <a href="#">mail@htmlacademy.ru</a>
+                    </div>
+                    <div class="div develop">
+                        <p>Разработано &mdash;</p>
+                        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Ссылка на сайт htmlАкадемии">htmlacademy.ru</a>
+                    </div>
+                </section>
+            </section>
         </section>
-        <section class="footer_links">
-            <a href="#">mail@htmlacademy.ru</a>
-            <p>Разработано &mdash;</p>
-            <a href="https://htmlacademy.ru" target="_blank" aria-label="Ссылка на сайт htmlАкадемии">htmlacademy.ru</a>
-        </section>
-        </footer>
+    </footer>
 </body>
+
 </html>
