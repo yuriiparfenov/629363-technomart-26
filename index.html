@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
 
 </head>
 
@@ -254,27 +254,47 @@
                 <a href="#">
                     <img src="./img/Map_small.jpg" class="pop-map" alt="Офис компании по адресу: г. Санкт-Петербург, ул. Большая Конюшенная 19" style="border: 0;" width="300" height="158" />
                 </a>
-                <a href="#" class="cont_link">заблудились?Напишите нам!</a>
+                <a href="#" class="cont-link">заблудились?Напишите нам!</a>
             </section>
         </section>
 
-        <section class="pop-up-map container po">
-            <img src="./img/карта.jpg" alt="Карта проезда" width="940" height="447">
-            <button class="map-btn" title="Закрыть"></button>
-        </section>
 
-        <form class="visually-hidden">
-            <input type="button" value="x" aria-label="Закрыть форму">
-            <p>Ваше имя:</p>
-            <input type="text" name="name" id="form_name" placeholder="Имя Фамилия">
-            <p>Ваш e-mail:</p>
-            <input type="email" name="email" id="form_email" placeholder="email@example.com">
-            <p>Текст письма:</p>
-            <input type="text" name="letter" id="form_letter" placeholder="В свободной форме">
-            <button type="submit">отправить</button>
-        </form>
 
     </main>
+    <section class="pop-up-map container">
+
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGHtEXo-" width="940" height="447" frameborder="1" allowfullscreen="true"></iframe>
+        <button class="map-btn" title="Закрыть"></button>
+    </section>
+
+    <form class="visually-hidden">
+
+        <section class="form">
+            <button class="map-btn form-btn" title="Закрыть"></button>
+            <div class="form_write">
+                <div class="inp_text">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" name="name" id="form_name" placeholder="Имя Фамилия" required>
+                </div>
+                <div class="inp_mail">
+                    <label for="email">Ваш e-mail:</label>
+                    <input type="email" name="email" id="form_email" placeholder="email@example.com" required>
+                </div>
+
+            </div>
+
+            <label for="letter">Текст письма:</label>
+            <textarea name="letter" id="form_letter" placeholder="В свободной форме" required></textarea>
+
+
+
+        </section>
+        <div class="form-submbtn">
+            <button type="submit" class="f-btn">отправить</button>
+        </div>
+
+
+    </form>
     <footer>
         <section class="footer_nav container">
             <div>
